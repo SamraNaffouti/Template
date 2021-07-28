@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" type="image/png" href="logo5.png">      <!--LOGO-->
+    <link rel="stylesheet" href="./3wanim.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+   
+    <title>Samra Naffouti</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myinput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("recherche *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+  
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navigation ">
+        <div class="width">
+            <div class="site-logo">
+                <a href="https://www.linkedin.com/in/samra-naffouti-1435b6203?fbclid=IwAR3M1sCisfTrjEjQU56pGvP9VKORydVcVDSScOPdTjE_ChXHte-7uVOewX4">
+                   <img src="logo5.png" alt="logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#accueil" class="button">Accueil</a></li>
+                <li><a href="#apropos" class="button">A propos de moi </a></li>
+                <li><a href="#competences" class="button">Mes Compétences</a></li>
+                <li><a href="#etudes" class="button">Mes études</a></li>
+                <li><a href="#experience" class="button">Expérience professionnelle</a></li>
+                <li><a href="#contact" class="button">Contact</a></li> 
+            </ul>
+           
+            <div class="d-flex flex-row-reverse ">
+                 <div class="menu-btn" onclick="myFunction()">
+                
+                    <i class="fa fa-bars" id="icone00"></i>
+            </div> 
+            <div id="amine" >
+                <li class="rech">
+                    <form >
+                        <input type="search" placeholder="Rechercher.." onkeyup="searchfn()" id="myinput">
+                        <i type="submit" class="fa fa-search ripple" ></i>
+                    </form>
+                </li>
+            </div>
+           
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <!-- ACCUEIL-->
+    <section class="accueil" id="accueil">
+        <div class="width">
+            <div class="cont-accueil">
+                <div class="texte">Salut,  je m'appelle  </div> 
+                <div class="w3-animate-fading">
+                <div class="texte1"> Samra Naffouti.</div></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+<!-- APROPOS -->
+<section class="apropos" id="apropos">
+    
+    <div class="width">
+        <h2 class="titre">A propos de moi </h2>
+        <div class="cont-apropos" >
+            <div class="column left">
+                <img src="me.jpg" alt="" width="400px" height="400px" id="myimg">
+            </div> 
+
+            <div class="column right"><div id="recherche">
+               <div class="texte9"> Je suis une jeune étudiante de 20 ans, en deuxième année Développement Web à ISET. Je suis curieuse, active et dynamique. Je suis une guitariste et j'étais auparavant une joueuse de Basket-Ball avec le Stade Tunisien. </div>
+            </div>
+        </div>
+    </div> </div>
+</section>
+
+
+<!-- COMPETENCES -->
+<section class="competences" id="competences">
+    <div id="recherche">
+    <div class="width">
+      <h2 class="titre">Mes compétences</h2>
+      <div class="cont-competences">
+          <div class="bars">
+              <div class="info">
+                  <span>HTML</span>
+                  <span>80%</span>
+              </div>
+              <div class="line HTML"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+                <span>CSS</span>
+                <span>70%</span>
+            </div>
+            <div class="line CSS"></div>
+        </div>
+        <div class="bars">
+            <div class="info">
+                <span>C/C++</span>
+                <span>50%</span>
+            </div>
+            <div class="line Clanguage"></div>
+        </div>
+        <div class="bars">
+            <div class="info">
+                <span>JavaScript</span>
+                <span>50%</span>
+            </div>
+            <div class="line JavaScript"></div>
+        </div>
+        <div class="bars">
+            <div class="info">
+                <span>Linux</span>
+                <span>40%</span>
+            </div>
+            <div class="line Linux"></div>
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+</div>
+</section>
+
+
+<!--ETUDES-->
+<section class="etudes" id="etudes">
+    <div id="recherche">
+    <div class="width">
+        <h2 class="titre">Mes études</h2>
+            <div class="cont-etudes">
+                  <ul class="etd">
+                      <li>Licence appliquée en Informatique</li>
+                      <p class="annee">Septembre 2020 - Septembre 2023</p>
+                      <br><br>
+                      <li>Baccalauréat en Sciences Expéimentales</li>
+                      <p class="annee">Septembre 2019 - Juin 2020</p>
+                  </ul>
+            </div>
+    </div></div>
+</section>
+    
+<!--EXPERIENCE-->
+<section class="experience" id="experience">
+    <div id="recherche">
+    <div class="width">
+        <h2 class="titre">Expérience professionnelle</h2>
+        <br><br>
+        <div class="cont-experience">
+              <ul class="exp">
+                  <li><span class="date">01/07/2021 - 30/07/2021 : </span> Stage d'été</li>
+                  <p class="societe">Orange Developer Center</p>
+                    <ul class="tache">
+                      <li class="tach1"> Tout au long de ce stage, j'ai réalisé mon propre portfolio en utilisant le HTML, CSS3 et JavaScript et je l'ai ajouté sur GitHub.
+                         <br /> J'ai aussi créé mon propre Logo en utilisant le site web Canvas.  </li>
+                      
+                    </ul>
+              </ul>
+        </div>
+    </div></div>
+</section>
+
+
+<!-- CONTACT-->
+<section class="contact" id="contact">
+    <div class="width">
+        <h2 class="titre">Contact</h2>
+        <div class="cont-contact">
+            <div class="column left">
+               <div class="icons">
+                   <div class="icon"> 
+                        <i class="fa fa-map-marker"></i>
+                        <div class="info">
+                            <div class="head">Adresse</div>
+                            <div class="subtitle">Khaznadar, Tunis</div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                       <i class="fa fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">E-mail</div>
+                            <div class="subtitle">samranaffouti14@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    <i class="fa fa-phone"></i>
+                    <div class="info">
+                         <div class="head">Numéro</div>
+                         <div class="subtitle">+21629030435</div>
+                    </div>
+                   </div>
+                   <br/>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/samra-naffouti-1435b6203?fbclid=IwAR3M1sCisfTrjEjQU56pGvP9VKORydVcVDSScOPdTjE_ChXHte-7uVOewX4"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="info">
+                            <div class="head">LinkedIn</div>
+                            <a href="https://www.linkedin.com/in/samra-naffouti-1435b6203?fbclid=IwAR3M1sCisfTrjEjQU56pGvP9VKORydVcVDSScOPdTjE_ChXHte-7uVOewX4">https://www.linkedin.com/in/samra-naffouti-14<br />35b6203?fbclid=IwAR3M1sCisfTrjEjQU56p<br />GvP9VKORydVcVDSScOPdTjE_ChXHte-7uVOewX4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="column right">
+                <div class="mailtext">Envoyer un Email</div> <br>
+
+                <form action="mailto:azizsahnoun5@gmail.com?subject=Un nouveau mail du portfolio." method="POST">
+
+
+                    
+                    <div class="informs">
+                        <div class="inform email">
+                            <input type="email" placeholder="Email" id="email" oninput="checker()">
+                            <p id="error-msg"><i id="icon5"></i></p>
+                        </div>
+                    </div>
+                    
+
+                        <div class="inform">
+                            <input type="text" placeholder="Ecrire votre nom" name="Nom" required>
+                        </div>
+                        <div class="inform textarea">
+                            <textarea cols="30" rows="8" placeholder="Ecrire votre message.." name="message" required></textarea>
+                        </div>
+
+
+                        <div class="button">
+                            <button type="submit" onclick="envoyer()" >Envoyer</button>
+                        </div>
+                        
+                </form>
+            </div>
+    </div>
+</section>
+<br><br><br>
+
+
+<script>
+    // Regex Pattern: /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/
+
+const emailId = document.getElementById("email");
+const errorMsg = document.getElementById("error-msg");
+const icon = document.getElementById("icon5");
+const mailRegex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
+function checker(){
+    icon.style.display="inline-block";
+    if(emailId.value.match(mailRegex)){
+        icon.innerHTML = '<i class="far fa-check-circle"></i>';
+        icon.style.color = '#2ecc71';
+        errorMsg.style.display = 'none';
+        emailId.style.border = '2px solid #2ecc71';
+    }
+    else if(emailId.value == ""){
+        icon.style.display = 'none';
+        errorMsg.style.display = 'none';
+        emailId.style.border = '2px solid #5fa0fa';
+    }
+    else{
+        icon.innerHTML = '<i class="fa fa-exclamation-circle"></i>';
+        icon.style.color = '#ff2851';
+        errorMsg.style.display = 'block';
+        email.style.border = '2px solid #ff2851';
+    }
+
+}
+f
+
+function envoyer(){
+    var x=document.forms['formulaire'].mail.value;
+    var y=document.forms['formulaire'].subject.value;
+    var z=document.forms['formulaire'].texxt.value;
+    if (!x.replace(/\s+/, '').length){
+        alert('Veuillez entrer votre E-mail!');
+    }else if((!y.replace(/\s+/, '').length)&&(!z.replace(/\s+/, '').length)){
+        alert('Veuilez entrer votre Sujet et votre Texte!');
+  
+    return false;
+  }
+
+    if (!y.replace(/\s+/, '').length){
+        alert('Veuillez entrer votre Sujet!');
+    }
+    if (!z.replace(/\s+/, '').length){
+        alert('Veuillez entrer votre Texte!');
+    }
+}
+
+function myFunction() {
+var x = document.getElementById("amine");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+
+
+</script>
+    
+</body>
+</html>
