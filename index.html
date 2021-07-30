@@ -63,7 +63,7 @@ $(document).ready(function(){
                 <li class="rech">
                     <form >
                         <input type="search" placeholder="Rechercher.." onkeyup="searchfn()" id="myinput">
-                        <i type="submit" class="fa fa-search ripple" ></i>
+                        <i type="submit" class="fa fa-search ripple" onclick="checkInput()"></i>
                     </form>
                 </li>
             </div>
@@ -72,7 +72,14 @@ $(document).ready(function(){
         </div>
         
     </nav>
-
+    <script>
+        function checkInput() {
+            var query = document.getElementById('myinput').value;
+            window.find(query);
+            return true;
+         
+        }
+    </script>
 
     <!-- ACCUEIL-->
     <section class="accueil" id="accueil">
